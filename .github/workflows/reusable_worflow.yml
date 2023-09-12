@@ -3,7 +3,7 @@ name: Reusable workflow example
 on:
   workflow_call:
     inputs:
-      config-path:
+      config_path:
         required: true
         type: string
     secrets:
@@ -17,4 +17,4 @@ jobs:
     - uses: actions/labeler@v4
       with:
         repo-token: ${{ secrets.token }}
-        configuration-path: ${{ inputs.config-path }}
+        configuration-path: ${{ inputs.config_path }}
